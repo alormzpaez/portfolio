@@ -9,8 +9,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "me": "url('./img/me.jpg')",
-        "dotnet" : "url('./img/dotnet.png')"
+        "me": "url('/img/me.jpg')",
+        "dotnet" : "url('/img/dotnet.png')"
       },
       colors: {
         "light-bg": colors.gray["300"],

@@ -22,12 +22,12 @@ import TechSkill from "./TechSkill";
 const TechSkills = () => {
   return (
     <>
-      <div className="flex flex-col items-center gap-2 p-4 rounded-md bg-light-primary">
-        <span className="self-center px-1 text-lg font-bold border-b-4 border-light-tertiary">
+      <div className="flex flex-col items-center gap-2 p-4 rounded-md bg-light-primary lg:py-2 lg:text-xs lg:self-end dark:bg-dark-primary">
+        <span className="self-center px-1 text-lg font-bold border-b-4 border-light-tertiary lg:text-sm">
           Habilidades técnicas
         </span>
       </div>
-      <div className="grid items-center grid-cols-2 p-1 rounded-md gap-y-3 gap-x-1">
+      <div className="grid items-center grid-cols-2 p-1 rounded-md gap-y-3 gap-x-1 lg:grid-cols-4 lg:gap-x-7">
         <TechSkill
           title="Office Suite"
           body="Paquete ofimático"
@@ -173,7 +173,7 @@ const TechSkills = () => {
             <div className="h-10 px-2 text-gray-300 bg-center bg-no-repeat bg-cover w-11 bg-dotnet">
             </div>
           }
-          backgroundIcon=""
+          backgroundIcon="bg-light-primary dark:bg-dark-primary"
         />
         <TechSkill
           title="SCRUM"
@@ -182,10 +182,10 @@ const TechSkills = () => {
           icon={
             <FontAwesomeIcon
               icon={faPeopleGroup}
-              className="px-2 text-2xl text-light-secondary"
+              className="px-2 text-2xl text-light-secondary dark:text-dark-secondary"
             />
           }
-          backgroundIcon="bg-light-primary"
+          backgroundIcon="bg-light-primary dark:bg-dark-primary"
         />
       </div>
     </>

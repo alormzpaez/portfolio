@@ -3,14 +3,14 @@ import React from "react";
 const TechSkill = ({ title = "", body = "", domain = 0, icon = null, backgroundIcon = "" }) => {
   return (
     <div className="relative">
-      <div className="flex flex-col h-auto p-2 pt-5 mt-5 text-xs rounded-md bg-light-primary">
-        <span className="font-bold">{title}</span>
+      <div className="flex flex-col h-auto p-2 pt-5 mt-5 text-xs rounded-md bg-light-primary dark:bg-dark-primary">
+        <span className="font-bold lg:font-semibold">{title}</span>
         <span>{body}</span>
         <div className="flex items-center gap-2">
           <span>Dominio:</span>
-          <div className="w-full h-2.5 rounded-full bg-light-bg">
+          <div className="w-full h-2.5 rounded-full bg-light-bg dark:bg-dark-bg">
             <div
-              className="h-full rounded-full bg-light-tertiary"
+              className="h-full rounded-full bg-light-tertiary dark:bg-dark-tertiary"
               style={{
                 width: domain + "%",
               }}
